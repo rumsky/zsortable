@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z-Sortable</title>
+    <script src="lib/Sortable.js"></script>
+</head>
+<body>
+    <h3>Usage</h3>
+    <ul id="sortList" style="height: 300px; border: 1px solid #f0f0f0; overflow: auto">
+
+    </ul>
+</body>
+<script>
+    var divs=document.createElement('div');
+    debugger
+    console.log('div',divs);
+    console.log((new Date).getTime());
+    console.log(+new Date);
+    var el=document.getElementById('sortList');
+    el.innerHTML = Array.apply(null, new Array(100)).map(function (v, i, p3) {
+        return '<li class="list-group-item">item'+(i+1) +'</li>'
+    }).join('');
+    var sortable = Sortable.create(el);
+
+
+
+</script>
+</html>
